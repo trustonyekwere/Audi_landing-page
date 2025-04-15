@@ -17,7 +17,7 @@
     src: url(/fonts/ethnocentric\ rg.otf);
 }
 
-header{
+.header{
     position: fixed;
     top: 0;
     left: 0;
@@ -84,6 +84,19 @@ nav .menu a:hover::after{
     align-items: center;
 }
 
+.ban{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/img/view-four-wheeled-vehicle-mobility-fast-travel.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding-top: -1000px !important;
+}
+
+
 .banner .text{
     width: 90%;
     margin: auto;
@@ -133,6 +146,54 @@ nav .menu a:hover::after{
     background-color: transparent;
 }
 
+.ban .txt{
+    width: 90%;
+    margin-top: 10%;
+    margin-left: 3%;
+    font-family: txt;
+}
+
+.ban .txt h4{
+    font-size: 35px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.ban .txt h3{
+    font-size: 50px;
+    color: #E8463F;
+    font-weight: 600;
+}
+
+.ban .txt h1{
+    font-size: 65px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+.ban .txt p{
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.ban .txt .btn{
+    border-radius: 30px;
+    padding-bottom: 50px;
+    padding-top: 10px;
+    background-color: #E8463F;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px solid #E8463F;
+    transition: 0.3s;
+}
+
+.ban .txt .btn:hover{
+    background-color: transparent;
+}
+
 .logo h4{
     margin-top: 30px;
     margin-left: 20px;
@@ -156,4 +217,8 @@ nav{
 .socials i:hover{
     color: #E8463F;
     transform: scale(1.3);
+}
+
+.mob-log{
+    color: #fff !important
 }

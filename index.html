@@ -7,51 +7,92 @@
     <!-- framework -->
     <link rel="stylesheet" href="css/materialize.css">
     <!-- external styling -->
-     <link rel="stylesheet" href="css/style.css">
-    <!-- Material icons -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://kit.fontawesome.com/fbafc4697c.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="/img/icons8-electric-16.png" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <nav class="z-depth-0">
-            <div class="logo">
-                <h4>N0VA</h4>
-            </div>
-            <div class="menu">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Features</a>
-                <a href="#">Brands</a>
-                <a href="#">Order</a>
-            </div>
+    <section class="hide-on-med-and-down">
 
-            <div class="socials">
-                <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+        <header class="header">
+            <nav class="z-depth-0">
+                <div class="logo">
+                    <h3 style="color: tomato;" >N0VA</h3>
+                </div>
+                <div class="menu">
+                    <a href="#">Home</a>
+                    <a href="#">Features</a>
+                    <a href="#">Brands</a>
+                    <a href="#">Order</a>
+                </div>
+    
+                <div class="socials">
+                    <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                </div>
+            </nav>
+        </header>
+    
+        <div class="banner">
+            <div class="text">
+                <h4>Powerful, Fast and</h4>
+                <h1>Effective</h1>
+                <p>Real Efficiency, Real Performance.</p>
+                <a href="#" class="btn">Book a Test Ride</a>
             </div>
-        </nav>
-    </header>
-
-    <div class="banner">
-        <div class="text">
-            <h3>NOVA EV</h3>
-            <h4>Powerful, Fast and</h4>
-            <h1>Effective</h1>
-            <p>Real Efficiency, Real Performance.</p>
-            <a href="#" class="btn">Book a Test Ride</a>
         </div>
-    </div>
 
-    <script src="/jqueryv3.4.1.js"></script>
-    <script src="/materialize.min.js"></script>
+    </section>
+
+    <section class="hide-on-large-only">
+
+        <header>
+            <nav class="z-depth-0">
+
+                <div class="logo">
+                    <h3 style="color: tomato;" >N0VA</h3>
+                </div>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    
+                <div class="socials">
+                    <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                </div>
+            </nav>
+
+            <ul class="sidenav" id="mobile-demo">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Brands</a></li>
+                <li><a href="#">Order</a></li>
+            </ul>
+        </header>
+    
+        <div class="ban">
+            <div class="txt">
+                <h4>Powerful, Fast and</h4>
+                <h1>Effective</h1>
+                <p>Real Efficiency, Real Performance.</p>
+                <a href="#" class="btn">Book a Test Ride</a>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="js/jqueryv3.4.1.js"></script>
+
+    <script src="js/materialize.min.js"></script>
     <script>
         $(document).ready(function(){
             $('.slider').slider({
                 height:600,
                 duration:5000,
             });
+            $('.sidenav').sidenav();
         });
     </script>
 </body>
